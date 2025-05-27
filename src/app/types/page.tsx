@@ -1,8 +1,8 @@
+
 import './types.scss'
 let allTypes: string[];
 
-const Types = () => {
-    const fetchTypes = async () => {
+const Types = async() => {
         try {
             const response = await fetch('https://pokeapi.co/api/v2/type/')
             const data = await response.json();
@@ -10,8 +10,9 @@ const Types = () => {
         } catch (error) {
             console.log(error)
         }
-    }
-    fetchTypes()
+    
+
+   
 
     return (
         <div className="pokemon__types">
