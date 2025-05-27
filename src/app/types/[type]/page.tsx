@@ -6,7 +6,7 @@ interface PokemonType {
 }
 let data: PokemonType[];
 
-const TypePage = async ({ params }: { params: { type: Promise<string> } }) => {
+const TypePage = async ({ params }: { params: Promise<{ type: string}> }) => {
     const { type } = await params
     try {
         const response = await fetch(`https://pokeapi.co/api/v2/type/${type}`)
