@@ -13,6 +13,8 @@ const Types = async () => {
         }
     }
 
+    fetchTypes()
+
     return (
         <div className="pokemon__types">
             {allTypes && allTypes.filter((item, index) => index < 18)
