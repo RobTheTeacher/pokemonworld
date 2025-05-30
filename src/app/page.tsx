@@ -2,7 +2,7 @@ import HomeGridArticle from "@/components/HomeGridArticle";
 import { HomeGridArticleType} from '@/utils/types'
 
 const articles:HomeGridArticleType[] = [
-  {title: "Sunny Days", image: "/beach.jpg", style:"primary"},
+  {title: "Day at the beach", image: "/beach.jpg", style:"primary"},
   {title: "Cute Bugs", image: "/bug.jpg", style:"secondary"},
   {title: "Waltzing Pokemon", image: "/dance.jpg", style:"tertiary"},
   {title: "Fire + Fighting", image: "/hotbunny.jpeg", style:"featured"},
